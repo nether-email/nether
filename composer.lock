@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4731429c7f25ab92eaa813447a972209",
+    "content-hash": "fe65df513f7a9b8dd6cd50cfba8c4233",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2534,6 +2534,111 @@
             "time": "2019-02-23T15:17:42+00:00"
         },
         {
+            "name": "tenancy/affects-routes",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tenancy/affects-routes.git",
+                "reference": "cb4d809db4b7e353c94c0a3db9dcb647def1854f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tenancy/affects-routes/zipball/cb4d809db4b7e353c94c0a3db9dcb647def1854f",
+                "reference": "cb4d809db4b7e353c94c0a3db9dcb647def1854f",
+                "shasum": ""
+            },
+            "require": {
+                "tenancy/framework": "*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tenancy\\Affects\\Routes\\Providers\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tenancy\\Affects\\Routes\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel@klabbers.email",
+                    "homepage": "http://luceos.com"
+                }
+            ],
+            "description": "The tenancy/tenancy routes mutations",
+            "keywords": [
+                "affects",
+                "routes",
+                "tenancy"
+            ],
+            "time": "2019-03-30T21:08:19+00:00"
+        },
+        {
+            "name": "tenancy/framework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tenancy/framework.git",
+                "reference": "52fa242f6ef727a517a72b1456651406d9bc285c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tenancy/framework/zipball/52fa242f6ef727a517a72b1456651406d9bc285c",
+                "reference": "52fa242f6ef727a517a72b1456651406d9bc285c",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.8.*",
+                "psr/container": "^1.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tenancy\\Providers\\TenancyProvider"
+                    ],
+                    "aliases": {
+                        "Tenancy": "Tenancy\\Facades\\TenancyFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tenancy\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel@klabbers.email",
+                    "homepage": "http://luceos.com"
+                }
+            ],
+            "description": "Creating multi tenant saas from your Laravel app with ease",
+            "keywords": [
+                "aws",
+                "gce",
+                "laravel",
+                "multi-tenant",
+                "saas",
+                "tenancy"
+            ],
+            "time": "2019-03-30T21:40:26+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.1",
             "source": {
@@ -4400,7 +4505,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "tenancy/affects-routes": 20,
+        "tenancy/framework": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

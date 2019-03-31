@@ -1,14 +1,15 @@
 <?php
 
-namespace App;
+namespace System\Models;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Tenancy\Identification\Concerns\AllowsTenantIdentification;
+use Tenancy\Identification\Contracts\Tenant;
 
-class User extends Authenticatable
+class User extends Authenticatable implements Tenant
 {
-    use Notifiable;
+    use Notifiable, AllowsTenantIdentification;
 
     /**
      * The attributes that are mass assignable.
