@@ -1,1 +1,1 @@
-@extend('app')
+@extends('app')

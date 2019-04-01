@@ -7,8 +7,7 @@
 
     <title>{{ config('app.name') }}</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Nova+Mono|Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+    <link rel="stylesheet" href="{{ $css ?? mix('/css/app.css') }}">
 </head>
 <body>
 <div id="app">

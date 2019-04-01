@@ -1,3 +1,3 @@
-@extend('app')
+@extends('app')
 
 @set('js', mix('/js/mailbox.js'))
