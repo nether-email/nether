@@ -1,10 +1,10 @@
 {
-    "name": "laravel/laravel",
+    "name": "tenancy/nether",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "The open source, multi tenant mail client for modern web.",
     "keywords": [
-        "framework",
-        "laravel"
+        "mail",
+        "laravel", "tenancy"
     ],
     "license": "GPL-3.0",
     "require": {
@@ -28,11 +28,6 @@
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "dont-discover": []
-        }
     },
     "autoload": {
         "psr-4": {
