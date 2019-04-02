@@ -1,0 +1,7 @@
+section {
+  @apply .my-4;
+
+  &:first-child {
+    @apply .mt-0;
+  }
+}

@@ -537,6 +537,15 @@ body {
   color: #e6e8ff;
 }
 
+section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+section:first-child {
+  margin-top: 0;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
