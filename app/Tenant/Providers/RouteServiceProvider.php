@@ -1,6 +1,6 @@
 <?php
 
-namespace Tenant\Providers;
+namespace App\Tenant\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Route;
@@ -16,7 +16,7 @@ class RouteServiceProvider extends ServiceProvider
                 ->flush()
                 ->fromFile(
                     ['middleware' => ['web']],
-                    base_path('tenant/routes.web.php')
+                    __DIR__ .  '/../routes/web.php'
                 );
         });
     }

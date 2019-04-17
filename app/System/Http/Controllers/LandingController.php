@@ -1,6 +1,6 @@
 <?php
 
-namespace System\Http\Controllers;
+namespace App\System\Http\Controllers;
 
 class LandingController
 {

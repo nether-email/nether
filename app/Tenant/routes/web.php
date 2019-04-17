@@ -1,7 +1,7 @@
 <?php
 
-use Tenant\Http\Controllers\MailboxController;
-use Tenant\Http\Controllers\SettingsController;
+use App\Tenant\Http\Controllers\MailboxController;
+use App\Tenant\Http\Controllers\SettingsController;
 
 
 Route::get('/m/{fallback?}', MailboxController::class)

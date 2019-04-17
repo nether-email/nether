@@ -3,7 +3,7 @@
     "type": "project",
     "description": "The open source, multi tenant mail client for modern web.",
     "keywords": [
-        "mail",
+        "mail", "webmail", "email",
         "laravel", "tenancy"
     ],
     "license": "GPL-3.0",
@@ -32,8 +32,6 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "System\\": "system/",
-            "Tenant\\": "tenant/"
         },
         "classmap": [
             "database/seeds",

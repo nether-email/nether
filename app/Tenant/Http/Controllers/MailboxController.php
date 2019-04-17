@@ -1,6 +1,6 @@
 <?php
 
-namespace Tenant\Http\Controllers;
+namespace App\Tenant\Http\Controllers;
 
 class MailboxController
 {
