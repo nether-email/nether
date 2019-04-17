@@ -1,0 +1,9 @@
+.Card {
+    @apply .bg-white .rounded .border-jet .shadow;
+    @apply .text-jet;
+    @apply .flex .flex-col;
+
+    & > p {
+        @apply .p-6;
+    }
+}

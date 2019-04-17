@@ -537,6 +537,28 @@ body {
   color: #fff;
 }
 
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #ff57ad;
+}
+
+.Card {
+  background-color: #fff;
+  border-radius: .25rem;
+  border-color: #1f1e21;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  color: #1f1e21;
+  display: flex;
+  flex-direction: column;
+}
+
+.Card > p {
+  padding: 1.5rem;
+}
+
 section {
   margin-top: 1rem;
   margin-bottom: 1rem;

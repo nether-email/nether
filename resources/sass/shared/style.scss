@@ -1,3 +1,10 @@
 body {
   @apply .bg-jet .text-white;
 }
+
+a {
+    color: inherit;
+    &:hover {
+        @apply .text-fuchsia;
+    }
+}
